@@ -1,3 +1,4 @@
+/*
 pipeline {
     agent any
 
@@ -48,14 +49,14 @@ pipeline {
         }
     }
 }
+*/
 
 
-/*
 pipeline {
     agent any
 
     triggers {
-        pollSCM('*&#47;(/)5 * * * 1-5')
+        pollSCM('*/5 * * * 1-5')
     }
 
     options {
@@ -148,7 +149,7 @@ pipeline {
             post {
                 always {
                     cucumber (buildStatus: 'SUCCESS',
-                    fileIncludePattern: '**to_remove/to_remove*.json',
+                    fileIncludePattern: '**/*.json',
                     jsonReportDirectory: './reports/',
                     parallelTesting: true,
                     sortingMethod: 'ALPHABETICAL')
@@ -196,4 +197,4 @@ pipeline {
         }
     }
 }
-*/
+
