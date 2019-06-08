@@ -138,7 +138,7 @@ pipeline {
             post {
                 always {
                     cucumber (buildStatus: 'SUCCESS',
-//                    fileIncludePattern: '**/*.json',
+                    fileIncludePattern: '**to_remove/to_remove*.json',
                     jsonReportDirectory: './reports/',
                     parallelTesting: true,
                     sortingMethod: 'ALPHABETICAL')
