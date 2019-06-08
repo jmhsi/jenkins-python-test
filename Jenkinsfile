@@ -45,7 +45,7 @@ pipeline {
     agent any
 
     triggers {
-        pollSCM('*/5 * * * 1-5')
+        pollSCM('*&#47;(/)5 * * * 1-5')
     }
 
     options {
