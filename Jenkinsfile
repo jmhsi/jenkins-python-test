@@ -151,7 +151,7 @@ pipeline {
                     cucumber (buildStatus: 'SUCCESS',
                     fileIncludePattern: '**/*.json',
                     jsonReportDirectory: './reports/',
-                    parallelTesting: true,
+                    // parallelTesting: true, this threw an error
                     sortingMethod: 'ALPHABETICAL')
                 }
             }

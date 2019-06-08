@@ -4,6 +4,7 @@ Changed versions of numpy and scipy in requirements.txt that were failing the bu
 Had to sudo apt install sloccount
 Make sure that I had Cobertura plugin in Jenkins
 Make sure to install cucumber plugins in Jenkins
+In post-always cucumber it threw error with parallel testing, so commented that line
 
 # jenkins python ci/cd
 
