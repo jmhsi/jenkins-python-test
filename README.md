@@ -1,4 +1,7 @@
-# a justin add
+# steps I took after forking to make this work:
+
+Changed versions of numpy and scipy in requirements.txt that were failing the build environment stage.
+Had to sudo apt install sloccount
 
 # jenkins python ci/cd
 
