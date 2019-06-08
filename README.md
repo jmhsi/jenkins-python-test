@@ -2,6 +2,8 @@
 
 Changed versions of numpy and scipy in requirements.txt that were failing the build environment stage.
 Had to sudo apt install sloccount
+Make sure that I had Cobertura plugin in Jenkins
+
 
 # jenkins python ci/cd
 
